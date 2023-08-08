@@ -30,7 +30,9 @@ These instructions will help you set up and run the RSS Aggregator on your local
 2. Install dependencies:
    ```sh
    go get -v ./...
+3. Create a PostgreSQL database and update the .env file using the template given by the .env.example file by inserting your own database URL and port number.
+
 3. Build and run the server:
    ```sh
    go build && ./rssAggregator
-4. Access the server at http://localhost:8080.
+4. Access the server at localhost:`PORT`.
